@@ -1,4 +1,3 @@
-import React from "react";
 import { LabelWrapper, EditorWrapper, InputWrapper } from "../lib/styles";
 import Paragraph from "../../Paragraph";
 import TextArea from "../../../shared/TextArea";

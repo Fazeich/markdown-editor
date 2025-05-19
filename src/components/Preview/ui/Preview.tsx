@@ -1,4 +1,3 @@
-import React from "react";
 import { EditorWrapper, LabelWrapper } from "../../Editor/lib/styles";
 import Paragraph from "../../Paragraph";
 import { useUnit } from "effector-react";

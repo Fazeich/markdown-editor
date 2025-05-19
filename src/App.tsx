@@ -1,4 +1,3 @@
-import React from "react";
 import { ThemeProvider } from "@emotion/react";
 import { useUnit } from "effector-react";
 import { $main } from "./store/main.store";
