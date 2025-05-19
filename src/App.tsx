@@ -1,6 +1,6 @@
+import React from "react";
 import { ThemeProvider } from "@emotion/react";
 import { useUnit } from "effector-react";
-import React from "react";
 import { $main } from "./store/main.store";
 import { DARK_THEME, LIGHT_THEME } from "./lib/theme";
 import Layout from "./components/Layout";

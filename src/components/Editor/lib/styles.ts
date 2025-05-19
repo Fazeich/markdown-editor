@@ -19,4 +19,11 @@ export const LabelWrapper = styled.div`
   padding: 10px;
 
   border-bottom: 2px solid ${({ theme }) => theme.border};
+
+  user-select: none;
+`;
+
+export const InputWrapper = styled.div`
+  width: 100%;
+  height: calc(100% - 35px);
 `;

@@ -7,4 +7,6 @@
   box-sizing: border-box;
 
   font-family: "Exo 2", "Segoe UI";
+
+  transition: color 0.25s, background 0.25s, border 0.25s !important;
 }

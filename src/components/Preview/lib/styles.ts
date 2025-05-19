@@ -1,13 +1,18 @@
 import styled from "@emotion/styled";
 
-export const StyledPreviewWrapper = styled.div`
-  background: ${({ theme }) => theme.background.secondary};
-
+export const PreviewTextWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: calc(100% - 35px);
 
-  border: 2px solid ${({ theme }) => theme.border};
-  border-radius: 10px;
+  background-color: ${({ theme }) => theme.background.primary};
+
+  color: ${({ theme }) => theme.text};
+
+  font-size: 1em;
+
+  padding: 10px;
+
+  border-radius: 0px 0px 10px 10px;
+
+  user-select: none;
 `;
-
-export const LabelWrapper = styled.div``;

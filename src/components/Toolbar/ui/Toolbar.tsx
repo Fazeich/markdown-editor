@@ -1,16 +1,28 @@
 import React from "react";
 import { ActionButtons, ToolbarWrapper } from "../lib/styles";
+import { $main, changeTheme } from "../../../store/main.store";
+import { Switch } from "antd";
+import { useUnit } from "effector-react";
+import Button from "../../../shared/Button";
 import Paragraph from "../../Paragraph";
-import { changeTheme } from "../../../store/main.store";
+import { changeEditor } from "../../../store/edior.store";
 
 export const Tooldbar = () => {
+  const { theme } = useUnit($main);
   return (
     <ToolbarWrapper>
       <ActionButtons>
-        <Paragraph text="Очистить" />
-        <Paragraph text="Скачать .md" />
+        <Button>
+          <Paragraph
+            text="Очистить"
+            onClick={() => changeEditor({ editorText: "" })}
+          />
+        </Button>
+        <Button>
+          <Paragraph text="Скачать .md" />
+        </Button>
       </ActionButtons>
-      <Paragraph text="Сменить тему" onClick={() => changeTheme()} />
+      <Switch checked={theme === "light"} onChange={() => changeTheme()} />
     </ToolbarWrapper>
   );
 };
