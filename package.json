@@ -6,7 +6,7 @@
   "homepage": "https://fazeich.github.io/markdown-editor",
   "scripts": {
     "dev": "vite --config configs/vite.config.ts",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build --config configs/vite.config.ts",
     "lint": "eslint src --fix",
     "preview": "vite preview",
     "predeploy": "npm run build",
