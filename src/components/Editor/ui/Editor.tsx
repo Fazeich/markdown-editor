@@ -6,7 +6,7 @@ import { useUnit } from "effector-react";
 import { $editor, changeEditor } from "../../../store/edior.store";
 
 export const Editor = () => {
-  const editor = useUnit($editor);
+  const { editorText } = useUnit($editor);
 
   return (
     <EditorWrapper>
@@ -15,7 +15,7 @@ export const Editor = () => {
       </LabelWrapper>
       <InputWrapper>
         <TextArea
-          value={editor.editorText}
+          value={editorText}
           onChange={({ target: { value } }) => {
             changeEditor({ editorText: value });
           }}

@@ -13,6 +13,7 @@ export const StyledTextArea = styled(TextArea)`
 
   border-radius: 0px 0px 10px 10px;
 
+  min-height: 250px !important;
   height: 100% !important;
 
   padding: 10px;

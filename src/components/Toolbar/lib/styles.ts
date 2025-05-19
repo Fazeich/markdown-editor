@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { TOOLBAR_HEIGHT } from "../../../lib/constants";
 
 export const ToolbarWrapper = styled.div`
   padding: 10px;
@@ -6,7 +7,7 @@ export const ToolbarWrapper = styled.div`
   background-color: inherit;
   border: 2px solid ${({ theme }) => theme.border};
 
-  height: 45px;
+  height: ${`${TOOLBAR_HEIGHT}px`};
 
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,13 @@ export const ToolbarWrapper = styled.div`
 `;
 
 export const ActionButtons = styled.div`
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+`;
+
+export const AutosavingTitleWrapper = styled.div`
   display: flex;
   align-items: center;
 

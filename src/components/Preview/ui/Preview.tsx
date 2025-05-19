@@ -4,6 +4,7 @@ import Paragraph from "../../Paragraph";
 import { useUnit } from "effector-react";
 import { $editor } from "../../../store/edior.store";
 import { PreviewTextWrapper } from "../lib/styles";
+import Markdown from "react-markdown";
 
 export const Preview = () => {
   const { editorText } = useUnit($editor);
@@ -13,7 +14,9 @@ export const Preview = () => {
       <LabelWrapper>
         <Paragraph text="Предпросмотр" />
       </LabelWrapper>
-      <PreviewTextWrapper>{editorText}</PreviewTextWrapper>
+      <PreviewTextWrapper>
+        <Markdown>{editorText}</Markdown>
+      </PreviewTextWrapper>
     </EditorWrapper>
   );
 };
